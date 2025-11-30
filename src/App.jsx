@@ -10,7 +10,7 @@ import TrueFocus from "./components/TrueFocus";
 import ExperienceAccordion from "./components/ExperienceAccordion";
 import SkillsAccordion from "./components/SkillsAccordion";
 import ProjectFilter from "./components/ProjectFilter";
-
+//dummy commit
 function App() {
   const heroMetrics = [
     { value: "99.98%", label: "Crash-free rate" },
