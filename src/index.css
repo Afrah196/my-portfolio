@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Rich macOS Cherry Blossom Palette */
+  --bg-sakura: #FFF5F7;
+  --sakura-white: #FFFFFF;
+  --sakura-mist: #FFF0F5;
+  --sakura-petal: #FFB7C5;
+  --sakura-blush: #FFD1DC;
+  --sakura-vibrant: #D48194;
+  --sakura-deep: #B3687A;
+
+  /* Contrast Accents */
+  --matcha-light: #E2F0CB;
+  --matcha-bold: #89B449;
+  --coffee-bean: #5D4037;
+  --sky-pale: #F0F8FF;
+
+  /* OS UI Constants */
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --os-shadow: 0 20px 50px rgba(212, 129, 148, 0.15);
+  --os-shadow-active: 0 30px 60px rgba(212, 129, 148, 0.25);
+
+  /* Typography */
+  --font-os: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Outfit', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: var(--bg-sakura);
+  color: var(--coffee-bean);
+  font-family: var(--font-os);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--sakura-petal) transparent;
+}
+
+::selection {
+  background-color: var(--sakura-petal);
+  color: #fff;
+}
+
+a {
+  color: var(--sakura-vibrant);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--sakura-deep);
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+.display-font {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
